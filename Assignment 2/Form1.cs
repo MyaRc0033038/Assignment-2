@@ -16,5 +16,37 @@ namespace Assignment_2
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+
+                
+                double Input = double.Parse(textBox1.Text);
+                double Input2 = double.Parse(textBox2.Text);
+                double Input3 = double.Parse(textBox3.Text);
+                double Answer = Input + Input2 + Input3;
+                label2.Text = Answer.ToString();
+
+
+            }
+
+            catch
+            {
+                MessageBox.Show("Please input a number");
+            }
+           
+
+
+
+
+        }
+
+        private void parralellToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
