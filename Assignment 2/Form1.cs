@@ -46,7 +46,7 @@ namespace Assignment_2
             }
             try
             {
-                Input4 = double.Parse(textBox4.Text);
+                Input4 = double.Parse(textBox7.Text);
             }
             catch
             {
@@ -54,14 +54,14 @@ namespace Assignment_2
             }
             try
             {
-                Input5 = double.Parse(textBox5.Text);
+                Input5 = double.Parse(textBox8.Text);
             }
             catch
             {
                 Input5 = 0;
             }
             double Answer = Input + Input2 + Input3 + Input4 + Input5;
-            label2.Text = Answer.ToString();
+            label1.Text = "= "+ Answer.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -69,7 +69,7 @@ namespace Assignment_2
             double Input, Input2, Input3, Input4, Input5;
             try
             {
-                Input = double.Parse(textBox1.Text);
+                Input = double.Parse(textBox4.Text);
             }
             catch
             {
@@ -77,7 +77,7 @@ namespace Assignment_2
             }
             try
             {
-                Input2 = double.Parse(textBox2.Text);
+                Input2 = double.Parse(textBox5.Text);
             }
             catch
             {
@@ -85,7 +85,7 @@ namespace Assignment_2
             }
             try
             {
-                Input3 = double.Parse(textBox3.Text);
+                Input3 = double.Parse(textBox6.Text);
             }
             catch
             {
@@ -93,7 +93,7 @@ namespace Assignment_2
             }
             try
             {
-                Input4 = double.Parse(textBox4.Text);
+                Input4 = double.Parse(textBox10.Text);
             }
             catch
             {
@@ -101,14 +101,14 @@ namespace Assignment_2
             }
             try
             {
-                Input5 = double.Parse(textBox5.Text);
+                Input5 = double.Parse(textBox9.Text);
             }
             catch
             {
                 Input5 = double.PositiveInfinity;
             }
             double Answer = 1.0 / (1.0 / Input + 1.0 / Input2 + 1.0 / Input3+1.0/Input4+1.0/Input5);
-            label2.Text = Answer.ToString();
+            label3.Text = "= "+Answer.ToString();
         }
     }
 }
