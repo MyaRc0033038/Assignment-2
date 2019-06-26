@@ -19,9 +19,10 @@ namespace Assignment_2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //this works out the series reszistance in the circuit 
             double Input, Input2, Input3, Input4, Input5;
-            try
-            {
+            try{
+         
                 Input = double.Parse(textBox1.Text);
             }
             catch
@@ -66,6 +67,7 @@ namespace Assignment_2
 
         private void button2_Click(object sender, EventArgs e)
         {
+            // this works out the parralel resistance in the circuit
             double Input, Input2, Input3, Input4, Input5;
             try
             {
@@ -109,6 +111,11 @@ namespace Assignment_2
             }
             double Answer = 1.0 / (1.0 / Input + 1.0 / Input2 + 1.0 / Input3+1.0/Input4+1.0/Input5);
             label3.Text = "= "+Answer.ToString();
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
